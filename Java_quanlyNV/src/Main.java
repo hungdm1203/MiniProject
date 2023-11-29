@@ -1,0 +1,25 @@
+
+
+import view.*;
+import database.*;
+import java.sql.*;
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author ADMIN
+ */
+public class Main {
+    public static void main(String[] args) {
+        Connection c=JDBCUtil.getConnection();
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                LoginView login=new LoginView("Login");
+            }
+        });
+    }
+}

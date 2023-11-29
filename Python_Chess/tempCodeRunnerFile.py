@@ -1,0 +1,1 @@
+C:\WORKSPACE\Python_Chess\assets\images\
