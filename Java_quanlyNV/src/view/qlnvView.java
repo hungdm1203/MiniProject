@@ -63,7 +63,6 @@ public class qlnvView extends javax.swing.JFrame {
         text5 = new javax.swing.JTextField();
         text6 = new javax.swing.JTextField();
         text7 = new javax.swing.JTextField();
-        text9 = new javax.swing.JTextField();
         text10 = new javax.swing.JTextField();
         add = new javax.swing.JButton();
         update = new javax.swing.JButton();
@@ -71,6 +70,7 @@ public class qlnvView extends javax.swing.JFrame {
         refesh = new javax.swing.JButton();
         search = new javax.swing.JComboBox<>();
         text8 = new javax.swing.JComboBox<>();
+        text9 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         header = new javax.swing.JLabel();
@@ -153,15 +153,6 @@ public class qlnvView extends javax.swing.JFrame {
         text7.setForeground(new java.awt.Color(0, 0, 0));
         text7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        text9.setBackground(new java.awt.Color(255, 255, 255));
-        text9.setForeground(new java.awt.Color(0, 0, 0));
-        text9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        text9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                text9ActionPerformed(evt);
-            }
-        });
-
         text10.setBackground(new java.awt.Color(255, 255, 255));
         text10.setForeground(new java.awt.Color(0, 0, 0));
         text10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -226,6 +217,10 @@ public class qlnvView extends javax.swing.JFrame {
         text8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Giam doc", "Ke toan", "Nhan su", "Ki thuat", "San xuat", "Kinh doanh" }));
         text8.setBorder(null);
 
+        text9.setBackground(new java.awt.Color(204, 204, 204));
+        text9.setForeground(new java.awt.Color(0, 0, 0));
+        text9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Giam doc", "Pho giam doc", "Truong phong", "Pho phong", "Nhan vien" }));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -259,9 +254,9 @@ public class qlnvView extends javax.swing.JFrame {
                             .addComponent(text5)
                             .addComponent(text6)
                             .addComponent(text7)
-                            .addComponent(text9)
                             .addComponent(text10)
-                            .addComponent(text8, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(text8, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(text9, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addComponent(add, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -430,10 +425,6 @@ public class qlnvView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_text1ActionPerformed
 
-    private void text9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_text9ActionPerformed
-
 
 
 
@@ -456,7 +447,7 @@ public class qlnvView extends javax.swing.JFrame {
         if(k==3) s8="Ki thuat";
         if(k==4) s8="San xuat";
         if(k==5) s8="Kinh doanh";
-        String s9= text9.getText();
+        String s9= (String) text9.getSelectedItem();
         if(!s1.isEmpty()) nv.setId(s1);
         if(!s2.isEmpty()) nv.setName(s2);
         if(!s3.isEmpty()) nv.setGender(s3);
@@ -484,7 +475,7 @@ public class qlnvView extends javax.swing.JFrame {
             if(JOptionPane.showConfirmDialog(this, "Bạn có chắc chắn muốn sửa không?")==JOptionPane.YES_OPTION){
                 try {
                     text1.setText("");text2.setText("");text3.setText("");text4.setText("");text5.setText("");
-                    text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setText("");text10.setText("");
+                    text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setSelectedIndex(0);text10.setText("");
                     new daoNV().deleteNV(list.get(i).getId());
                     JOptionPane.showMessageDialog(this, "Sửa thông tin thành công!");
                     new daoNV().addNV(nv);
@@ -511,7 +502,7 @@ public class qlnvView extends javax.swing.JFrame {
         String s1= text1.getText();String s2= text2.getText();
         String s3= text3.getText();String s4= text4.getText();
         String s5= text5.getText();String s6= text6.getText();
-        String s7= text7.getText();String s9= text9.getText();
+        String s7= text7.getText();String s9= (String) text9.getSelectedItem();
         String s8= ""; int k=text8.getSelectedIndex();
         if(k==0) s8="Giam doc";
         if(k==1) s8="Ke toan";
@@ -541,7 +532,7 @@ public class qlnvView extends javax.swing.JFrame {
             } catch (Exception ex) {}
             JOptionPane.showMessageDialog(this, "Thêm thành công!");
             text1.setText("");text2.setText("");text3.setText("");text4.setText("");text5.setText("");
-            text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setText("");text10.setText("");
+            text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setSelectedIndex(0);;text10.setText("");
             try {
                 showTable();
             } catch (IOException ex) {}
@@ -586,7 +577,7 @@ public class qlnvView extends javax.swing.JFrame {
     private void refeshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refeshActionPerformed
         // TODO add your handling code here:
         text1.setText("");text2.setText("");text3.setText("");text4.setText("");text5.setText("");
-        text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setText("");text10.setText("");
+        text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setSelectedIndex(0);;text10.setText("");
         jTable1.setAutoCreateRowSorter(false);
         try {
             showTable();
@@ -639,7 +630,7 @@ public class qlnvView extends javax.swing.JFrame {
             if(k==5) s="Kinh doanh";
             model.setRowCount(0);
             for (NhanVien nhanVien : tmp) {
-                if(nhanVien.getDepartment().toLowerCase().contains(s.toLowerCase())){
+                if(nhanVien.getDepartment().toLowerCase().equals(s.toLowerCase())){
                     model.addRow(new Object[]{
                         nhanVien.getId(),nhanVien.getName(),nhanVien.getGender(),nhanVien.getDob(),nhanVien.getPhoneNumber(),
                         nhanVien.getEmail(),nhanVien.getAddress(),nhanVien.getDepartment(),nhanVien.getPosition(),nhanVien.getSalary()
@@ -648,10 +639,10 @@ public class qlnvView extends javax.swing.JFrame {
                 }
             }
         } else if(x==3){
-            String s=text9.getText();
+            String s=(String)text9.getSelectedItem();
             model.setRowCount(0);
             for (NhanVien nhanVien : tmp) {
-                if(nhanVien.getPosition().toLowerCase().contains(s.toLowerCase())){
+                if(nhanVien.getPosition().toLowerCase().equals(s.toLowerCase())){
                     model.addRow(new Object[]{
                         nhanVien.getId(),nhanVien.getName(),nhanVien.getGender(),nhanVien.getDob(),nhanVien.getPhoneNumber(),
                         nhanVien.getEmail(),nhanVien.getAddress(),nhanVien.getDepartment(),nhanVien.getPosition(),nhanVien.getSalary()
@@ -668,7 +659,7 @@ public class qlnvView extends javax.swing.JFrame {
         int i=jTable1.getSelectedRow();
         NhanVien nv=res.get(i);
         text1.setText(nv.getId());text2.setText(nv.getName());text3.setText(nv.getGender());text4.setText(nv.getDob());text5.setText(nv.getPhoneNumber());
-        text6.setText(nv.getEmail());text7.setText(nv.getAddress());text8.setSelectedItem(nv.getDepartment());text9.setText(nv.getPosition());text10.setText(nv.getSalary()+"");
+        text6.setText(nv.getEmail());text7.setText(nv.getAddress());text8.setSelectedItem(nv.getDepartment());text9.setSelectedItem(nv.getPosition());text10.setText(nv.getSalary()+"");
 
     }//GEN-LAST:event_jTable1MouseClicked
 
@@ -781,7 +772,7 @@ public class qlnvView extends javax.swing.JFrame {
     private javax.swing.JTextField text6;
     private javax.swing.JTextField text7;
     private javax.swing.JComboBox<String> text8;
-    private javax.swing.JTextField text9;
+    private javax.swing.JComboBox<String> text9;
     private javax.swing.JButton update;
     // End of variables declaration//GEN-END:variables
 }
