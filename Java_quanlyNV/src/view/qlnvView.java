@@ -10,7 +10,7 @@ import java.util.*;
 import java.io.*;
 import model.NhanVien;
 import java.sql.*;
-import database.*;
+//import database.*;
 
 
 /**
@@ -216,6 +216,11 @@ public class qlnvView extends javax.swing.JFrame {
         text8.setForeground(new java.awt.Color(0, 0, 0));
         text8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Giam doc", "Ke toan", "Nhan su", "Ki thuat", "San xuat", "Kinh doanh" }));
         text8.setBorder(null);
+        text8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                text8ActionPerformed(evt);
+            }
+        });
 
         text9.setBackground(new java.awt.Color(204, 204, 204));
         text9.setForeground(new java.awt.Color(0, 0, 0));
@@ -392,10 +397,10 @@ public class qlnvView extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
+                .addContainerGap(18, Short.MAX_VALUE)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 1093, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1093, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(45, 45, 45)
@@ -407,12 +412,12 @@ public class qlnvView extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(header, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(logout))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane1))
                 .addGap(46, 46, 46))
@@ -528,11 +533,13 @@ public class qlnvView extends javax.swing.JFrame {
         if(ok==1){
             NhanVien nv=new NhanVien(s1, s2, s3, s4, s5, s6, s7, s8, s9, s10);
             try {
-                new daoNV().addNV(nv);
+                daoNV daonv=new daoNV();
+                daonv.addNV(nv);
+                JOptionPane.showMessageDialog(this, "Thêm thành công!");
+                text1.setText("");text2.setText("");text3.setText("");text4.setText("");text5.setText("");
+                text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setSelectedIndex(0);;text10.setText("");
             } catch (Exception ex) {}
-            JOptionPane.showMessageDialog(this, "Thêm thành công!");
-            text1.setText("");text2.setText("");text3.setText("");text4.setText("");text5.setText("");
-            text6.setText("");text7.setText("");text8.setSelectedIndex(0);;text9.setSelectedIndex(0);;text10.setText("");
+            
             try {
                 showTable();
             } catch (IOException ex) {}
@@ -683,6 +690,10 @@ public class qlnvView extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_logoutMouseClicked
 
+    private void text8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_text8ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -692,7 +703,7 @@ public class qlnvView extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        Connection c=JDBCUtil.getConnection();
+//        Connection c=JDBCUtil.getConnection();
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -709,7 +720,7 @@ public class qlnvView extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(qlnvView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
+//        </editor-fold>
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

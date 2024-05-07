@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.*;
 import model.NhanVien;
 import java.sql.*;
-import database.*;
+//import database.*;
 /**
  *
  * @author ADMIN
@@ -20,8 +20,8 @@ public class daoNV {
         try {
             String url="jdbc:mysql://localhost:3306/qlnv";
             String user="root";
-            String pass="Nho1nguoi";
-            String jdbc_driver="com.mysql.cj.jdbc.Driver";
+            String pass="";
+//            String jdbc_driver="com.mysql.cj.jdbc.Driver";
             connec=DriverManager.getConnection(url, user, pass);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -43,7 +43,6 @@ public class daoNV {
     public ArrayList<NhanVien> getlistNV(){
         ArrayList<NhanVien> list=new ArrayList<>();
         String sql="select * from `nhanvien`";
-        Connection c=JDBCUtil.getConnection();
         try {
             PreparedStatement ps=connec.prepareStatement(sql);
             ResultSet rs=ps.executeQuery();
@@ -84,21 +83,8 @@ public class daoNV {
     
     //  them nhan vien vao co so du lieu mysql
     public void addNV(NhanVien nv){
-        String sql="insert into `nhanvien`(`maNV`,`hoTen`,`gioiTinh`,`ngaySinh`,`sdt`,`email`,`diaChi`,`phongBan`,`chucVu`,`luongCB`) values (?,?,?,?,?,?,?,?,?,?);";
-        // try {
-        //     PreparedStatement ps=connec.prepareStatement(sql);
-        //     ps.setString(1, nv.getId());
-        //     ps.setString(2, nv.getName());
-        //     ps.setString(3, nv.getGender());
-        //     ps.setString(4, nv.getDob());
-        //     ps.setString(5, nv.getPhoneNumber());
-        //     ps.setString(6, nv.getEmail());
-        //     ps.setString(7, nv.getAddress());
-        //     ps.setString(8, nv.getDepartment());
-        //     ps.setString(9, nv.getPosition());
-        //     ps.setInt(10, nv.getSalary());
-        //     ps.executeUpdate();
-        // } catch (Exception e) {}
+        String sql="insert into `nhanvien`(`maNV`,`hoTen`,`gioiTinh`,`ngaySinh`,`sdt`,`email`,`diaChi`,`phongBan`,`chucVu`,`luongCB`) values (?,?,?,?,?,?,?,?,?,?)";
+        
         try {
             PreparedStatement ps=connec.prepareStatement(sql);
             ps.setString(1, nv.getId());
@@ -199,7 +185,7 @@ public class daoNV {
 
     
     
-    public static void main(String[] args) throws IOException {
-        new daoNV();
-    }
+//    public static void main(String[] args) throws IOException {
+//        new daoNV();
+//    }
 }

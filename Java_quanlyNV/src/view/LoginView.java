@@ -64,7 +64,7 @@ public class LoginView extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try {
             listUser=new daoUser().getListUser();
-        } catch (IOException ex) {}
+        } catch (Exception ex) {}
 
         int ok=0;
         for (User user : listUser) {

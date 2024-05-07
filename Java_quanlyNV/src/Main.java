@@ -1,7 +1,7 @@
 
 
 import view.*;
-import database.*;
+//import database.*;
 import java.sql.*;
 
 /*
@@ -15,7 +15,6 @@ import java.sql.*;
  */
 public class Main {
     public static void main(String[] args) {
-        Connection c=JDBCUtil.getConnection();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 LoginView login=new LoginView("Login");
