@@ -90,45 +90,7 @@ public class PlayerActivity extends AppCompatActivity {
         mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
         mediaPlayer.start();
 
-        updateSeekBar = new Thread() {
-            @Override
-            public void run() {
-                int totalDuration = mediaPlayer.getDuration();
-                int currentPosition = 0;
-                while (currentPosition<totalDuration){
-                    try {
-                        sleep(500);
-                        currentPosition = mediaPlayer.getCurrentPosition();
-                        seekMusicBar.setProgress(currentPosition);
-//                        txtSongStart.setText(String.format("%d:%d", (currentPosition / 1000) / 60, (currentPosition / 1000) % 60));
-                    } catch (Exception ee){}
-                }
-            }
-        };
-
-        seekMusicBar.setMax(mediaPlayer.getDuration());
-        updateSeekBar.start();
-        seekMusicBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.purple_700), PorterDuff.Mode.MULTIPLY);
-        seekMusicBar.getThumb().setColorFilter(getResources().getColor(R.color.purple_700), PorterDuff.Mode.SRC_IN);
-
-        seekMusicBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                if (fromUser) {
-//                    mediaPlayer.seekTo(progress);
-//                }
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                mediaPlayer.seekTo(seekBar.getProgress());
-            }
-        });
+        updateSeekBar();
 
         String endTime=createTime(mediaPlayer.getDuration());
         txtSongEnd.setText(endTime);
@@ -141,6 +103,20 @@ public class PlayerActivity extends AppCompatActivity {
                 String curr=createTime(mediaPlayer.getCurrentPosition());
                 txtSongStart.setText(curr);
                 handler.postDelayed(this, delay);
+                if(txtSongStart.getText().toString().equals(txtSongEnd.getText().toString())){
+                    mediaPlayer.stop();
+                    mediaPlayer.release();
+                    position=(position+1)%mySongs.size();
+                    Uri uri = Uri.parse(mySongs.get(position).toString());
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
+                    songName = mySongs.get(position).getName();
+                    txtSongName.setText(songName);
+                    mediaPlayer.start();
+
+                    startAnimation(imageView,360f);
+                    btnPlay.setBackgroundResource(R.drawable.baseline_pause_24);
+                    updateSeekBar();
+                }
             }
         },delay);
 
@@ -182,6 +158,8 @@ public class PlayerActivity extends AppCompatActivity {
                 mediaPlayer.start();
 
                 startAnimation(imageView,360f);
+
+                updateSeekBar();
             }
         });
 
@@ -202,27 +180,29 @@ public class PlayerActivity extends AppCompatActivity {
                 mediaPlayer.start();
 
                 startAnimation(imageView, -360f);
+
+                updateSeekBar();
             }
         });
 
-        btnPrevious.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mediaPlayer.stop();
-                mediaPlayer.release();
-                if (position - 1 < 0) {
-                    position = mySongs.size() - 1;
-                } else {
-                    position--;
-                }
-                Uri uri = Uri.parse(mySongs.get(position).toString());
-                mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
-                songName = mySongs.get(position).getName();
-                txtSongName.setText(songName);
-                mediaPlayer.start();
-                startAnimation(imageView, -360f);
-            }
-        });
+//        btnPrevious.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                mediaPlayer.stop();
+//                mediaPlayer.release();
+//                if (position - 1 < 0) {
+//                    position = mySongs.size() - 1;
+//                } else {
+//                    position--;
+//                }
+//                Uri uri = Uri.parse(mySongs.get(position).toString());
+//                mediaPlayer = MediaPlayer.create(getApplicationContext(), uri);
+//                songName = mySongs.get(position).getName();
+//                txtSongName.setText(songName);
+//                mediaPlayer.start();
+//                startAnimation(imageView, -360f);
+//            }
+//        });
 
         btnFastForward.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -269,5 +249,48 @@ public class PlayerActivity extends AppCompatActivity {
             time = time + sec;
         }
         return time;
+    }
+
+
+    public void updateSeekBar(){
+        updateSeekBar = new Thread() {
+            @Override
+            public void run() {
+                int totalDuration = mediaPlayer.getDuration();
+                int currentPosition = 0;
+                while (currentPosition<totalDuration){
+                    try {
+                        sleep(500);
+                        currentPosition = mediaPlayer.getCurrentPosition();
+                        seekMusicBar.setProgress(currentPosition);
+//                        txtSongStart.setText(String.format("%d:%d", (currentPosition / 1000) / 60, (currentPosition / 1000) % 60));
+                    } catch (Exception ee){}
+                }
+            }
+        };
+
+        seekMusicBar.setMax(mediaPlayer.getDuration());
+        updateSeekBar.start();
+        seekMusicBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.purple_700), PorterDuff.Mode.MULTIPLY);
+        seekMusicBar.getThumb().setColorFilter(getResources().getColor(R.color.purple_700), PorterDuff.Mode.SRC_IN);
+
+        seekMusicBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+//                if (fromUser) {
+//                    mediaPlayer.seekTo(progress);
+//                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                mediaPlayer.seekTo(seekBar.getProgress());
+            }
+        });
     }
 }
