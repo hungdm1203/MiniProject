@@ -1,0 +1,61 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/contentBodyColor"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/grey_light"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_course_stat"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_course_iv"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Course Image" />
+
+        <TextView
+            android:paddingHorizontal="12dp"
+            android:id="@+id/title_course_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/title_course"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/contentTextColor"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <ProgressBar
+            android:paddingHorizontal="12dp"
+            android:id="@+id/progress_bar_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:progressTint="@color/bright_orange"
+            android:backgroundTint="@color/color_hint"
+            android:max="100"
+            android:progress="50"/>
+
+        <TextView
+            android:paddingHorizontal="12dp"
+            android:paddingBottom="12dp"
+            android:id="@+id/progress_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70% completed"
+            android:textSize="12sp"
+            android:textColor="@color/color_hint"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
