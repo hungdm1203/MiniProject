@@ -47,16 +47,16 @@ fun PlaylistDetailHeader(
                     modifier = Modifier.size(20.dp)
                 )
             }
-            IconButton(
-                onClick = onSort,
-            ) {
-                Icon(
-                    painter = painterResource(R.drawable.sort),
-                    contentDescription = null,
-                    tint = colorScheme.primary,
-                    modifier = Modifier.size(20.dp)
-                )
-            }
+//            IconButton(
+//                onClick = onSort,
+//            ) {
+//                Icon(
+//                    painter = painterResource(R.drawable.sort),
+//                    contentDescription = null,
+//                    tint = colorScheme.primary,
+//                    modifier = Modifier.size(20.dp)
+//                )
+//            }
         }
     }
 }

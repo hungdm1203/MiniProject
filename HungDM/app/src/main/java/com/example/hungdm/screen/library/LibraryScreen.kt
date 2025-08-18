@@ -29,6 +29,7 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.hungdm.R
+import com.example.hungdm.screen.component.Loading
 import com.example.hungdm.screen.component.NoInternet
 import com.example.hungdm.utils.AppUtils
 import com.example.hungdm.screen.library.component.AddSongToPlaylistDialog
@@ -50,17 +51,12 @@ fun LibraryScreen(
     var showAddSongToPlaylistDialog by remember { mutableStateOf(false) }
     var selectedLocal by remember { mutableStateOf(true) }
 
-    LaunchedEffect(Unit) {
-        if(state.listSongLocal.isEmpty()) { viewModel.processIntent(MviIntent.LoadSongLocal(context)) }
+    LaunchedEffect(state.listSongLocal.isEmpty(), state.listSongRemote.isEmpty()) {
+        viewModel.processIntent(MviIntent.LoadSongLocal(context))
+        viewModel.processIntent(MviIntent.LoadSongRemote(context))
         viewModel.processIntent(MviIntent.LoadPlaylistsOfUser)
-    }
-
-    LaunchedEffect(key1 = isLoadSong) {
-        if (isLoadSong) {
-            viewModel.processIntent(MviIntent.LoadSongRemote(context))
-            delay(1000)
-            isLoadSong = false
-        }
+        delay(1000)
+        isLoadSong = false
     }
 
     BackHandler { onBack() }
@@ -79,21 +75,13 @@ fun LibraryScreen(
             },
             onClickRemote = {
                 selectedLocal = false
-                isLoadSong = true
             }
         )
 
         Spacer(Modifier.size(10.dp))
 
         if (isLoadSong) {
-            Box(modifier = Modifier.fillMaxSize()) {
-                val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.lottie_remote_item_loading))
-                val progress by animateLottieCompositionAsState(composition)
-                LottieAnimation(
-                    composition = composition,
-                    progress = { progress },
-                )
-            }
+            Loading()
         } else {
             if (selectedLocal) {
                 LibraryContent(

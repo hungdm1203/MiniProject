@@ -36,6 +36,7 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.hungdm.R
 import com.example.hungdm.screen.component.NoInternet
 import com.example.hungdm.mvi.MviIntent
+import com.example.hungdm.screen.component.Loading
 import com.example.hungdm.screen.home.component.HomeHeader
 import com.example.hungdm.screen.home.component.TopAlbums
 import com.example.hungdm.screen.home.component.TopArtists
@@ -111,17 +112,7 @@ fun HomeScreen(
 
         if (topAlbums == null || topTracks == null || topArtists == null) {
             if (isLoading) {
-                Box(
-                    modifier = Modifier.fillMaxSize(),
-                    contentAlignment = Alignment.Center
-                ) {
-                    val composition by rememberLottieComposition(LottieCompositionSpec.RawRes(R.raw.lottie_remote_item_loading))
-                    val progress by animateLottieCompositionAsState(composition)
-                    LottieAnimation(
-                        composition = composition,
-                        progress = { progress },
-                    )
-                }
+                Loading()
             } else {
                 NoInternet(onCLick = { isLoading = true })
             }
