@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_article.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_favourites.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_headlines.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_error.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_news.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation_menu.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/navigation/news_nav_graph.xml">
+        <config>
+          <theme>@style/Theme.TestNewsApp</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ad944bd-384e-4b3d-9c23-b3d1b8e079a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../NewsApp/.idea/deviceManager.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/8.12.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/caches/deviceStreaming.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/modules/app/MigrationCodelab.app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/ASSETS_LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/androidTest/java/com/google/samples/apps/sunflower/GardenActivityTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/androidTest/java/com/google/samples/apps/sunflower/PlantDetailFragmentTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/androidTest/java/com/google/samples/apps/sunflower/data/GardenPlantingDaoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/androidTest/java/com/google/samples/apps/sunflower/data/PlantDaoTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/androidTest/java/com/google/samples/apps/sunflower/utilities/TestUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/androidTest/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModelTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/androidTest/java/com/google/samples/apps/sunflower/worker/RefreshMainDataWorkTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/assets/plants.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/GardenActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/GardenFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/HomeViewPagerFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/PlantListFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/adapters/BindIsGone.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/adapters/GardenPlantingAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/adapters/PlantAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/adapters/PlantDetailBindingAdapters.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/adapters/SunflowerPagerAdapter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/AppDatabase.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/Converters.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlanting.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/GardenPlantingRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/Plant.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/PlantAndGardenPlantings.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/PlantDao.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/data/PlantRepository.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/plantdetail/PlantDetailDescription.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/plantdetail/PlantDetailFragment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/utilities/Constants.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/utilities/GetZoneForLatitude.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/utilities/InjectorUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GardenPlantingListViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/viewmodels/GardenPlantingListViewModelFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantAndGardenPlantingsViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantDetailViewModelFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantListViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/viewmodels/PlantListViewModelFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/views/MaskedCardView.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/java/com/google/samples/apps/sunflower/workers/SeedDatabaseWorker.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/anim/slide_in_left.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/anim/slide_in_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/anim/slide_out_left.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/anim/slide_out_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/animator/show_toolbar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/color/color_on_surface_20.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/color/color_on_surface_50.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/garden_tab_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_detail_back.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_detail_share.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_filter_list_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_my_garden_active.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_my_garden_inactive.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_plant_list_active.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_plant_list_inactive.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/ic_plus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/plant_list_tab_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/drawable/tab_icon_color_selector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/layout/activity_garden.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/layout/fragment_garden.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/layout/fragment_plant_detail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/layout/fragment_plant_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/layout/fragment_view_pager.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/layout/list_item_garden_planting.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/layout/list_item_plant.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/menu/menu_plant_detail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/menu/menu_plant_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-hdpi/ic_launcher_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-mdpi/ic_launcher_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xhdpi/ic_launcher_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxhdpi/ic_launcher_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxxhdpi/ic_launcher_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/navigation/nav_garden.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-ca/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-de/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-es/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-fr/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-it/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-ja/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-night-v23/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-night/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-ru/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-tr-rTR/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-v23/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-v29/shape.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-zh-rCN/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values-zh-rTW/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values/anim.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values/integers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values/shape.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/test/java/com/google/samples/apps/sunflower/data/ConvertersTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/test/java/com/google/samples/apps/sunflower/data/GardenPlantingTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/test/java/com/google/samples/apps/sunflower/data/PlantTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/app/src/test/java/com/google/samples/apps/sunflower/utilities/GrowZoneUtilTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/build/reports/problems/problems-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/screenshots/ic_launcher-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/screenshots/icon_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/screenshots/icon_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/screenshots/jetpack_donut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/screenshots/phone_my_garden.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/screenshots/phone_plant_detail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/screenshots/phone_plant_list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MigrationCodelab/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewsApp/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsApp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/androidTest/java/com/example/unscramble/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/data/WordsData.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/ui/GameScreen.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/ui/GameUiState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/ui/GameViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/ui/theme/Color.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/ui/theme/Shape.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/ui/theme/Theme.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/java/com/example/unscramble/ui/theme/Type.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/test/java/com/example/unscramble/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/test/java/com/example/unscramble/WordsData.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/app/src/test/java/com/example/unscramble/ui/test/GameModelViewTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unscramble/settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\DELL\.android\avd\Pixel_9_Pro_API_35.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hungdm1203&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/hungdm1203/MiniProject.git&quot;,
+    &quot;accountId&quot;: &quot;c30a89f3-0a53-49e2-8ec6-a9b590af952f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2ptTKTLRiJbszYVRKLqN5ZVWWaA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MiniProject/TestNewsApp&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\APP\TestNewsApp\app\src\main\res\navigation" />
+      <recent name="D:\APP\TestNewsApp\app\src\main\res\layout" />
+      <recent name="D:\APP\TestNewsApp\app\src\main\res\menu" />
+      <recent name="D:\APP\TestNewsApp\app\src\main\res\drawable" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.testnewsapp.ui" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.testnewsapp.models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="TestNewsApp.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ad944bd-384e-4b3d-9c23-b3d1b8e079a2" name="Changes" comment="" />
+      <created>1733584308249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733584308249</updated>
+    </task>
+    <servers />
+  </component>
+</project>
